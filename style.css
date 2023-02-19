@@ -1,0 +1,318 @@
+/* # Front-end Style Guide
+
+## Layout
+
+The designs were created to the following widths:
+
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
+
+### Primary
+
+- White: hsl(0, 0%, 100%)
+- Black: hsl(0, 0%, 0%)
+- Dark Gray: hsl(0, 0%, 55%)
+- Very Dark Gray: hsl(0, 0%, 41%)
+
+### Neutral
+
+## Typography
+
+### Body Copy
+
+- Font size: 15px
+
+### Fonts
+
+- Family: [Alata](https://fonts.google.com/specimen/Alata)
+- Weight: 400
+
+- Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
+- Weight: 300
+
+font-family: 'Alata', sans-serif;
+font-family: 'Josefin Sans', sans-serif;
+
+*/
+
+:root{
+    --fs: 1rem;
+    --fs1: 1.5rem;
+    --fs2: 2rem;
+    --fs3: 2.3rem;
+    --fs4: 4.2rem;
+    --ff: 'Alata', sans-serif;
+    --ff2: 'Josefin Sans', sans-serif;
+    --cwhite: hsl(0, 0%, 100%);
+    --cblack: hsl(0, 0%, 0%);
+    --cdg: hsl(0, 0%, 55%);
+    --cvdg: hsl(0, 0%, 41%);
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1440px;
+    overflow-x: hidden;
+}
+
+/* 
+.wrapper{
+    max-width: 1440px;
+    margin: 0 auto;
+}  */
+
+.hero-header-container{
+    background: url(/img/desktop/image-hero.jpg) no-repeat top;
+    padding-bottom: 11rem;
+    width: 100%;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem 3rem 6rem;
+}
+
+.mobile_nav{
+    display: none;
+}
+
+nav ul{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+nav ul li{
+    
+    list-style: none;
+    padding: 0.8rem;
+}
+
+nav ul li a{
+    font-family: var(--ff);
+    text-decoration: none;
+    color: var(--cwhite);
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.hamburger-container{
+    display: none;
+}
+
+/*HERO*/
+
+.hero-container{
+    margin: 0 auto;
+    padding: 2rem 0 0 6rem;
+}
+
+.hero-container h1{
+    font-family: var(--ff2);
+    color: var(--cwhite);
+    font-size: var(--fs4);
+    display: inline-block;
+    border: 2px solid var(--cwhite);
+    text-transform: uppercase;
+    padding: 3rem 8rem 3rem 3rem;
+    line-height: 4.5rem;
+}
+
+/*MAIN*/
+
+main{
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.main-container{
+    margin: 6rem 0 8rem 6.5rem;
+}
+
+.main-left-picture{
+    width: 700px;
+}
+
+.main-right-section{
+    position: absolute;
+    max-width: 700px;
+    margin-top: -319px;
+    margin-left: 556px;
+    background-color: var(--cwhite);
+    padding: 6rem 6rem 0 6rem;
+}
+
+.main-right-header{
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    line-height: 3rem;
+    font-size: var(--fs3);
+    font-family: var(--ff2);
+}
+
+.main-right-paragraph{
+    font-size: var(--fs);
+    color: var(--cvdg);
+    font-family: var(--ff);
+}
+
+/*MIDDLE*/
+
+.middle-container{
+    padding: 0 6rem 5rem 6rem;
+    background-color: var(--cwhite);
+}
+
+.middle-header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.middle-header{
+   font-family: var(--ff2);
+   font-size: var(--fs2);
+   text-transform: uppercase;
+}
+
+.middle-button button{
+    font-family: var(--ff);
+    padding: 0.5rem 2.3rem;
+    background-color: transparent;
+    border: 2px solid var(--cdg);
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    cursor: pointer;
+}
+
+.middle-button button:hover{
+    background-color: var(--cblack);
+    color: var(--cwhite);
+    transition: 200ms ease-in-out;
+
+}
+
+.middle-button2{
+    display: none;
+}
+
+/*CONTENTS*/
+
+.middle-contents{
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.middle-contents div{
+    height: 488px;
+    background-size: cover;
+    display: flex;
+}
+
+
+.middle-contents div:hover{
+    opacity: 20%;
+    cursor: pointer;
+    color: var(--cblack);
+}
+
+.middle-contents h2:hover{
+    color: var(--cblack);
+}
+
+.middle-contents h2{
+    color: var(--cwhite);
+    align-self: flex-end;
+    font-family: var(--ff2);
+    font-size: var(--fs3);
+    line-height: 3rem;
+    padding: 0 0 2rem 2rem;
+    text-transform: uppercase;
+}
+
+.deep-earth{
+     background: url(/img/desktop/image-deep-earth.jpg) no-repeat;
+}
+
+.night-arcade{
+    background: url(/img/desktop/image-night-arcade.jpg) no-repeat;
+}
+
+.soccer-team{
+    background: url(/img/desktop/image-soccer-team.jpg) no-repeat;
+}
+
+.the-grid{
+    background: url(/img/desktop/image-grid.jpg) no-repeat;
+}
+
+.from-up{
+    background: url(/img/desktop/image-from-above.jpg) no-repeat;
+}
+
+.pocket-borealis{
+    background: url(/img/desktop/image-pocket-borealis.jpg) no-repeat;
+}
+
+.the-curiosity{
+    background: url(/img/desktop/image-curiosity.jpg) no-repeat;
+}
+
+.make-it{
+    background: url(/img/desktop/image-fisheye.jpg) no-repeat;
+}
+
+/*FOOTER*/
+
+.mobile-footer{
+    display: none;
+}
+
+
+.desktop-footer{
+    max-width: 1440px;
+    margin: 0 auto;
+    background-color: var(--cblack);
+}
+
+.desktop-logo-socials-container{
+    display: flex;
+    justify-content: space-between;
+    padding: 4rem 6rem 1rem 6rem; 
+}
+
+.desktop-socials{
+    display: flex;
+    gap: 1rem;
+}
+
+.desktop-socials img{
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+}
+
+.desktop-nav-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6rem 2rem 6rem;
+}
+
+.desktop-nav-container ul{
+    padding: 0;
+}
+
+.desktop-nav-container h3{
+    color: var(--cvdg);
+    font-family: var(--ff);
+    font-size: var(--fs);
+}

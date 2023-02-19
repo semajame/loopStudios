@@ -1,0 +1,435 @@
+@media screen and (max-width: 850px) {
+        
+    :root{
+        --fs: 1rem;
+        --fs1: 1.5rem;
+        --fs2: 2rem;
+        --fs3: 2.3rem;
+        --fs4: 4.2rem;
+        --ff: 'Alata', sans-serif;
+        --ff2: 'Josefin Sans', sans-serif;
+        --cwhite: hsl(0, 0%, 100%);
+        --cblack: hsl(0, 0%, 0%);
+        --cdg: hsl(0, 0%, 55%);
+        --cvdg: hsl(0, 0%, 41%);
+    }
+    
+    .hero-header-container{
+        padding: 0;
+        background: url(/img/desktop/image-hero.jpg) no-repeat top;
+    }
+
+    header{
+        padding: 4rem 2rem;
+    }
+
+    .logo-container{
+        z-index: 2;
+        padding: 0;
+    }
+
+    .hamburger-container{
+        display: block;
+        z-index: 2;
+        cursor: pointer;
+        justify-content: right;
+    }
+
+    .desktop_ul{
+        display: none;
+    }
+
+    .mobile_nav{
+        display: none;
+        z-index: 1;
+        position: fixed;
+        background-color: var(--cblack);
+        top: -1000px;
+        left: 0;
+        right: 0;
+        height: 100%;
+        transition: 1s ease-in-out;
+    }
+    
+    .mobile_nav.active{
+        z-index: 1;
+        display: block;
+        top: 0;
+        transition: 1s ease-in-out;
+    }
+
+    .mobile_nav ul{
+        margin-top: 15rem;
+        display: block;
+    }
+
+    .mobile_nav a{
+        text-transform: uppercase;
+        font-family: var(--ff2);
+        font-size: var(--fs3);
+        color: var(--cdg);
+        letter-spacing: 0.1rem;
+    }
+
+    /*HERO*/
+
+    .hero-container{
+        padding: 2rem 2rem;
+        padding-bottom: 5rem;
+        text-align: left;
+      }
+
+    .hero-container h1{
+        font-family: var(--ff2);
+        color: var(--cwhite);
+        font-size: var(--fs4);
+        display: inline-block;
+        border: 2px solid var(--cwhite);
+        text-transform: uppercase;
+        padding: 3rem 8rem 3rem 3rem;
+        line-height: 4.5rem;
+    }
+
+    /*MAIN*/
+
+        
+    main{
+        max-width: none;
+    }
+
+    .main-container{
+        display: block;
+        margin: 7rem 3rem;
+    }
+
+    .main-left-picture{
+        width: 100%;
+    }
+
+    .main-right-section{
+        position: relative;
+        max-width: none;
+        padding: 4rem 0 0 0;
+        margin: 0;
+        background-color: var(--cwhite);
+    }
+
+    .main-right-header{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .main-right-paragraph{
+        text-align: center;
+        padding: 0 3rem;
+    }
+
+        
+    /*MIDDLE*/
+
+    .middle-container{
+        padding: 0 2rem 5rem 2rem;
+    }
+
+    .middle-header-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .middle-header{
+        font-size: var(--fs1);
+    }
+
+    .middle-button2{
+        display: none;
+    }
+
+    /*CONTENTS*/
+
+    .middle-contents{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .middle-contents div{
+        height: 488px;
+        background-size: cover;
+        display: flex;
+        flex: 1;
+    }
+
+    .middle-contents h2{
+        color: var(--cwhite);
+        align-self: flex-end;
+        font-family: var(--ff2);
+        font-size: var(--fs3);
+        line-height: 3rem;
+        padding: 0 0 2rem 2rem;
+        text-transform: uppercase;
+    }
+
+    /*FOOTER*/
+
+    .desktop-footer{
+        display: none;
+    }
+    
+    .mobile-footer{
+        display: block;
+        background-color: var(--cblack);
+    }
+
+    .logo-socials-container img{
+        padding-top: 3rem;
+        margin: 0 auto;
+    }
+
+    .footer-nav-container ul{
+        padding: 1rem 0 0 0;
+        display: block;
+    }
+
+        
+    .footer-nav-container{
+        text-align: center;
+        padding: 0;
+    
+    }
+
+    .socials {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .mobile-footer h2{
+        padding: 1.5rem 0 4rem 0;
+        color: var(--cvdg);
+        font-family: var(--ff2);
+        font-size: var(--fs);
+        text-align: center;
+
+    }
+
+}
+
+@media screen and (max-width: 520px) {
+
+    
+    .hero-header-container{
+        padding: 0;
+        background: url(/img/mobile/image-hero.jpg) no-repeat top;
+        background-size: 100%;
+        height: 652px;
+    }
+    
+    .mobile_nav ul{
+        margin-top: 10rem;
+    }
+
+    .mobile_nav a{
+        font-size: var(--fs1);
+    }
+
+    /*HERO*/
+
+    .hero-container{
+        padding: 2rem 1rem;
+        padding-bottom: 5rem;
+        text-align: left;
+        display: grid;
+        place-items: center;
+      }
+
+    .hero-container h1{
+        font-family: var(--ff2);
+        color: var(--cwhite);
+        font-size: var(--fs3);
+        border: 2px solid var(--cwhite);
+        text-transform: uppercase;
+        padding: 1.3rem 3rem 1.3rem 1.3rem;
+        line-height: 2.5rem;
+    }
+
+    /*MAIN*/
+
+    .main-right-section{
+        display: block;
+    }
+
+    .main-right-header{
+        text-align: center;
+        font-size: 2rem;
+    }
+
+    .main-right-paragraph{
+        text-align: center;
+        padding: 0;
+    }
+
+        
+    /*MIDDLE*/
+
+    .middle-container{
+        padding: 0;
+        padding-bottom: 4rem;
+        background-color: var(--cwhite);
+    }
+
+    .middle-header-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 3rem;
+    }
+
+    .middle-header{
+        margin: 0 auto;
+        text-align: center;
+        font-family: var(--ff2);
+        text-transform: uppercase;
+    }
+
+    .middle-header h2{
+        font-size: var(--fs2);
+    }
+
+    /*CONTENTS*/
+
+    .middle-contents{
+        margin: 2rem 2rem 0 2rem;
+        display: flex;
+        flex-direction: column;
+        column-gap: 1rem;
+    }
+
+    .middle-contents div{
+        height: 130px;
+    }
+
+    .middle-contents h2{
+        color: var(--cwhite);
+        align-self: flex-end;
+        font-family: var(--ff2);
+        font-size: var(--fs1);
+        line-height: 2rem;
+        padding: 3.5rem 0 0 1rem;
+        text-transform: uppercase;
+    }
+
+    .deep-earth{
+        background: url(/img/mobile/image-deep-earth.jpg) no-repeat center;
+        
+    }
+
+    .night-arcade{
+        background: url(/img/mobile/image-night-arcade.jpg) no-repeat center;
+        
+    }
+
+    .soccer-team{
+        background: url(/img/mobile/image-soccer-team.jpg) no-repeat center;
+      
+    }
+
+    .the-grid{
+        background: url(/img/mobile/image-grid.jpg) no-repeat center;
+    }
+
+    .from-up{
+        background: url(/img/mobile/image-from-above.jpg) no-repeat center;
+    }
+
+    .pocket-borealis{
+        background: url(/img/mobile/image-pocket-borealis.jpg) no-repeat center;
+    }
+
+    .the-curiosity{
+        background: url(/img/mobile/image-curiosity.jpg) no-repeat center;
+    }
+
+    .make-it{
+        background: url(/img/mobile/image-fisheye.jpg) no-repeat center;
+
+    }
+
+    .middle-button{
+        display: none;
+    }
+
+    .middle-button2{
+        margin-top: 2rem;
+        display: grid;
+        place-items: var(--cwhite);
+        cursor: pointer;
+    }
+
+    .middle-button2 button{
+        font-family: var(--ff);
+        background-color: transparent;
+        border: 2px solid var(--cdg);
+        text-transform: uppercase;
+        letter-spacing: 0.5rem;
+        cursor: pointer;
+        padding: 0.5rem 2.3rem;
+        margin: 0 auto;
+    }
+
+    
+    .middle-button2 button:hover{
+        background-color: var(--cblack);
+        color: var(--cwhite);
+        transition: 200ms ease-in-out;
+    
+    }
+
+    /*FOOTER*/
+    
+    .desktop-footer{
+        display: none;
+    }
+
+    .mobile-footer{
+        display: block;
+        background-color: var(--cblack);
+    }
+
+    .logo-socials-container img{
+        padding-top: 3rem;
+        margin: 0 auto;
+    }
+
+    .footer-nav-container ul{
+        padding: 1rem 0 0 0;
+        display: block;
+    }
+
+        
+    .footer-nav-container{
+        text-align: center;
+        padding: 0;
+    
+    }
+
+    .socials {
+        margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .mobile-footer h2{
+        padding: 1.5rem 0 4rem 0;
+        color: var(--cvdg);
+        font-family: var(--ff2);
+        font-size: var(--fs);
+        text-align: center;
+
+    }
+
+}
